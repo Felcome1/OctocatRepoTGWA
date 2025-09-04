@@ -1,0 +1,91 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center-content {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#repos-list {
+  display: flex;
+  position: relative;
+  top: 4vh;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.repo-element {
+  display: flex;
+  width: 90%;
+  height: 60px;
+  background-color: rgb(50, 50, 50);
+  border: 1px solid grey;
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.repo-button {
+  position: relative;
+  height: 80%;
+  width: 30%
+}
+
+.repo-name { text-overflow: ellipsis; overflow: hidden; max-width: 50%;}
+
+.repo-element .repo-name,
+.repo-element .repo-button {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(40, 40, 40);
+  z-index: 1000;
+  height: 20vmin;
+}
+
+body { margin: 0px !important; }
+
+h1 {
+  font-size: 8vmin;
+  line-height: 1;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+footer { height: 5vh }
